@@ -1,12 +1,11 @@
 import { render, screen } from "@testing-library/react";
 import { MemoryRouter } from "react-router-dom";
 import { vi } from "vitest";
-import UserInfoCard from "../components/UserInfoCard"; // Adjust path if needed
+import UserInfoCard from "../components/UserInfoCard"; 
 import { UserContext } from "../context/UserProvider";
 
 
 
-// Mock useNavigate
 vi.mock("react-router-dom", async (importOriginal) => {
     const actual = await importOriginal();
     return {

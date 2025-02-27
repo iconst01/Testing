@@ -20,7 +20,7 @@ describe("LRNR Homepage", () => {
     });
   
     it("ensures navigation menu opens on click", () => {
-      cy.get(".sidenav-trigger").click({ force: true }); // Force click if hidden
+      cy.get(".sidenav-trigger").click({ force: true }); 
       cy.get(".sidenav").should("be.visible");
     });
   });

@@ -5,12 +5,11 @@ import LogoutButton from "../components/LogoutButton";
 import { UserContext } from "../context/UserProvider";
 
 
-// Mock useNavigate from react-router-dom
 vi.mock("react-router-dom", async (importOriginal) => {
     const actual = await importOriginal();
     return {
         ...actual,
-        useNavigate: vi.fn(() => vi.fn()), // Mock useNavigate function
+        useNavigate: vi.fn(() => vi.fn()), 
     };
 });
 
